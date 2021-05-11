@@ -11,9 +11,11 @@
     "copy-webpack-plugin": "^5.0.5",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "truffle-hdwallet-provider": "^1.0.17"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "web3": "^1.2.4"
   }
 }

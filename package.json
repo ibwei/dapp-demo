@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ibwei/DApp-Demo#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "truffle-hdwallet-provider": "^1.0.17"
   }
 }

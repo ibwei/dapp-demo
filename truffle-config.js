@@ -49,7 +49,7 @@ module.exports = {
     },
     
     develop: {
-      port: 8545
+      port: 7545
     },
 
     // Another network with more advanced options...
@@ -67,7 +67,7 @@ module.exports = {
     ropsten: {
       provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/a7c5edacd32c4dd49cdd5f68628ad1e8`),
       network_id: 3,       // Ropsten's id
-      gas: 5500000,        // Ropsten has a lower block limit than mainnet
+      gas: 15500000,        // Ropsten has a lower block limit than mainnet
     },
 
     // Useful for private networks

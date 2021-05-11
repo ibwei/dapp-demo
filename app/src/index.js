@@ -12,24 +12,8 @@ const App = {
   start: async function() {
     const { web3 } = this;
 
-    try {
+  
       // get contract instance
-      const networkId = 5777
-      const deployedNetwork = metaCoinArtifact.networks[networkId];
-      this.meta = new web3.eth.Contract(
-        metaCoinArtifact.abi,
-        deployedNetwork.address,
-      );
-
-      // get accounts
-      const accounts = await web3.eth.getAccounts();
-     console.log('acoount',accounts)
-
-     console.log('options',this.meta.options)
-
-    } catch (error) {
-      console.error("Could not connect to contract or chain.");
-    }
   },
 
   refreshBalance: async function() {
@@ -48,12 +32,9 @@ const App = {
 
     try {
       // get contract instance
-      const networkId = 5777;
-      const deployedNetwork = helloArtifact.networks[networkId];
-      console.log(deployedNetwork)
       this.meta = new web3.eth.Contract(
         helloArtifact.abi,
-        deployedNetwork.address,
+       '0x5f8484a440d780332AFfa11588fd33323e4f7714',
       )
       console.log('this.meta',this.meta)
       const res = await this.meta.methods.say(name).call()
@@ -63,8 +44,6 @@ const App = {
         console.log(e)
         alert('error happend')
       }
-    
-
   },
 
   setStatus: function(message) {

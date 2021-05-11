@@ -1,0 +1,25 @@
+{
+  "name": "dapp-webpack",
+  "version": "1.0.0",
+  "description": "A basic &amp; simply demo for study build a Dapp.",
+  "main": "run.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibwei/DApp-Demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibwei/DApp-Demo/issues"
+  },
+  "homepage": "https://github.com/ibwei/DApp-Demo#readme",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
